@@ -1,0 +1,18 @@
+@import "./components/index";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body{
+  letter-spacing: 0px;
+  background: transparent linear-gradient(180deg, #5AC8FA 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box; 
+}
+

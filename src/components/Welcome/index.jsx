@@ -75,13 +75,26 @@ const Welcome = (props) => {
         <motion.div
           key="welcomeText"
           className="welcome__text"
+          initial={{ y: -80 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 1 }}
         >
           Welcome to Apple
         </motion.div>
-        <div className="welcome__subText">
+        <motion.div 
+          className="welcome__subText"
+          initial={{ y: 80 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 1 }}
+        >
           See our Products
-        </div>
-        <div className="welcome__icons">
+        </motion.div>
+        <motion.div
+          className="welcome__icons"
+          initial={{ transform: 'scale(1.5, 1.5)'}}
+          animate={{ transform: 'scale(1, 1)'}}
+          transition={{ duration: 1 }}
+        >
           <img
             src={iphone}
             width="20"
@@ -97,7 +110,7 @@ const Welcome = (props) => {
             width="20"
             height="29"
           />
-        </div>
+        </motion.div>
       </motion.div>
     </motion.div>  )
 }

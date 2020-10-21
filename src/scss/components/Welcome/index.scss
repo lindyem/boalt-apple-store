@@ -1,0 +1,36 @@
+@import '../../variables.scss';
+
+.welcome {
+  background-color: $color-white;
+  eight: 100vh;
+
+  &__header{
+    background-color: $color-black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  &__body {
+    background: transparent linear-gradient(180deg, #5AC8FA 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box; 
+  }
+
+  &__mainContent {
+    background-image: url('../../../assets/images/apple-512.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 755px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  &__text{
+    position: relative;
+    top: 30px;
+    font: normal normal normal 25px/38px Poppins;
+  }
+}

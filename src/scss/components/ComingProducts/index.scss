@@ -4,7 +4,7 @@
   background-color: $color-white;
   height: 100vh;
 
-  &__header{
+  &__header {
     background-color: $color-black;
     height: 100px;
     display: flex;
@@ -22,12 +22,12 @@
     flex-flow: column;
   }
 
-  &__image{
+  &__image {
     display: block;
     margin-top: 100px;
   }
 
-  &__text{
+  &__text {
     position: relative;
     top: -130px;
     font: normal normal normal 25px/38px Poppins;

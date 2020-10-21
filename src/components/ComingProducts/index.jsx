@@ -35,26 +35,32 @@ const ComingProducts = (props) => {
   const history = useHistory();
 
   return (
-    <div className="comingProducts" onClick={() => history.push('/welcome')}>
+    <motion.div
+      className="comingProducts"
+      onClick={() => history.push('/welcome')}
+      initial={{opacity: 1}}
+      animate={{ opacity: 1}}
+      exit={{opacity: 0}}
+      transition={{ duration: 5 }}
+    >
       <motion.div
         className="comingProducts__header"
         key="comingProductsHeader"
         initial={{ height: '20px'}}
         animate={{ height: '100px'}}
-        // exit={{ x: '-70vw'}}
         transition={{ duration: 1 }}
       >
-        <motion.img src={appleLogoSmall}/>
+        <img src={appleLogoSmall}/>
       </motion.div>
       <motion.div className="comingProducts__body"
         key="comingProductsBody"
         initial={{ transform: 'scale(1, 1)'}}
         animate={{ transform: 'scale(0.9, 0.95)'}}
-        // exit={{ x: '-70vw'}}
         transition={{ duration: 1 }}
       >
         <motion.img 
           src={appleLogoBig}
+          key="comingProductsImage"
           className="comingProducts__image"
           width="325"
           height="290"
@@ -63,6 +69,7 @@ const ComingProducts = (props) => {
           transition={{ duration: 1 }}
         />
         <motion.div
+          key="comingProductsText"
           className="comingProducts__text"
           initial={{opacity: 0, transform: 'scale(1.5, 1.5)', y: 100}}
           animate={{ transform: 'scale(1, 1)', opacity: 1, y: 0}}
@@ -74,12 +81,23 @@ const ComingProducts = (props) => {
           <Reel text="2019" theme={theme}/>
         </div>
       </motion.div>
-    </div>
-  )
+    </motion.div>  )
 }
 
 
 export default ComingProducts;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

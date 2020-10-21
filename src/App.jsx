@@ -17,6 +17,7 @@ function App() {
           <Route path="/signUp" component={SignUp} />
           <Route path="/comingProducts" component={ComingProducts} />
           <Route path="/welcome" component={Welcome} />
+          
         </Switch>
       </AnimatePresence>
     </div>

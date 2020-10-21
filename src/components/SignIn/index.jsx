@@ -1,15 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 import { motion } from "framer-motion"
-import { Link } from "react-router-dom";
+import { Link, useHistory, Redirect } from "react-router-dom";
 
 const SignIn = (props) => {
+  const history = useHistory();
+  const [redirect, setRedirect] = useState('');
+  if(redirect) {
+    return <Redirect to={redirect} />
+  }
   return (
     <motion.div
       key="1"
       initial={{ x: '-70vw'}}
       animate={{ x: 0,}}
-      exit={{ x: '-70vw'}}
-      transition={{ duration: '0.1' }}
+     
+      transition={{ duration: 1 }}
     >
       <div className="signIn">
         <div className="signIn__container">
@@ -36,8 +41,8 @@ const SignIn = (props) => {
             </div>
           </form>
           <div className="signIn__buttonContainer">
-              <button className="signIn__button" type="button">Sign-In</button>  
-            </div>
+            <button className="signIn__button" type="button"> <Link to={`/comingProducts`}>Sign-In</Link></button>  
+          </div>
         </div>
         <div className="signIn__signUp">
             Not Registered?   <Link to={`/signUp`}>Sign-Up</Link>

@@ -1,0 +1,79 @@
+@import '../../variables.scss';
+
+.welcome {
+  background-color: $color-white;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    
+  }
+
+  &__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-black;
+    height: 100%;
+    width: 100px;
+  }
+  
+  &__menuItems {
+    display: flex;
+    margin-right: 100px;
+  }
+
+  &__menuLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
+    font: normal normal normal 20px/30px Poppins;
+    width: 367px;
+    
+      a {
+        text-decoration: none;
+         color: $color-grey;
+      }
+  }
+
+  &__menuButton {
+    width: 156px;
+    height: 46px;
+    background: $color-light-blue 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    border-color: $color-white;
+    font: normal normal normal 20px/30px Poppins;
+    color: $color-white;
+  }
+
+  &__body {
+    background: transparent linear-gradient(90deg, #F2F2F2 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+    width: calc(100% - 200px);
+    height: 977px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin: 0 auto;
+  }
+
+  &__text {
+    position: relative;
+    top: -160px;
+    font: normal normal bold 79px/95px Poppins;
+  }
+  
+  &__subText {
+    color: $color-light-blue;
+    margin-top: 20px;
+    font: normal normal  20px/30px Poppins;
+    text-align: left;
+  }
+
+  &__icons {
+    justify-content: space-evenly;
+  }
+}

@@ -1,8 +1,8 @@
 @import '../../variables.scss';
 
-.welcome {
+.comingProducts {
   background-color: $color-white;
-  eight: 100vh;
+  height: 100vh;
 
   &__header{
     background-color: $color-black;
@@ -15,22 +15,25 @@
 
   &__body {
     background: transparent linear-gradient(180deg, #5AC8FA 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box; 
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
   }
 
-  &__mainContent {
-    background-image: url('../../../assets/images/apple-512.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 755px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  &__image{
+    display: block;
+    margin-top: 100px;
   }
 
   &__text{
     position: relative;
-    top: 30px;
+    top: -130px;
     font: normal normal normal 25px/38px Poppins;
+  }
+
+  &__reel {
+    margin-top: 192px;
   }
 }

@@ -42,6 +42,9 @@ const Welcome = (props) => {
       <motion.div
         className="welcome__header"
         key="welcomeHeader"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       >
       
         <div className="welcome__logo" ><img src={appleLogoSmall} /></div>
@@ -58,16 +61,16 @@ const Welcome = (props) => {
       </motion.div>
       <motion.div className="welcome__body"
         key="welcomeBody"
+        initial={{ opacity: 0.5 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       >
         <motion.img 
           src={appleLogoBig}
           key="welcomeImage"
           className="welcome__image"
-          width="325"
-          height="290"
-          initial={{opacity: 0, transform: 'scale(0.5, 0.5)'}}
-          animate={{ transform: 'scale(1, 1)', opacity: 1}}
-          transition={{ duration: 1 }}
+          width="292.5"
+          height="275.5"
         />
         <motion.div
           key="welcomeText"

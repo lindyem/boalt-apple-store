@@ -8,7 +8,6 @@
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    
   }
 
   &__logo{
@@ -52,14 +51,19 @@
   &__body {
     background: transparent linear-gradient(90deg, #F2F2F2 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
     width: calc(100% - 200px);
-    height: 977px;
+    height: calc(100vh - 100px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
     margin: 0 auto;
+
   }
 
+  &__image {
+    margin-top: 200px;
+  }
+  
   &__text {
     position: relative;
     top: -160px;
@@ -74,6 +78,10 @@
   }
 
   &__icons {
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin-top: 152px;
+   
   }
 }

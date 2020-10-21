@@ -5,10 +5,9 @@ import { Link } from "react-router-dom";
 const SignUp = (props) => {
   return (
     <motion.div
-      key="2"
+      key="signUp"
       initial={{ x: '70vw'}}
       animate={{ x: 0}}
-      exit={{ x: '70vw'}}
       transition={{ duration: '0.1' }}
     >
     <div className="signUp">

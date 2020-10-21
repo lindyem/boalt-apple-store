@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div>
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence>
         <Switch>
           <Route exact path="/" component={SignIn} />
           <Route path="/signUp" component={SignUp} />

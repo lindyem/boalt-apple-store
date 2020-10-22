@@ -1,13 +1,15 @@
 @import '../../variables.scss';
 
-.welcome {
+.iphone {
   background-color: $color-white;
+  height: 100vh;
 
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
+    background-color: $color-white;
   }
 
   &__logo{
@@ -49,38 +51,64 @@
   }
 
   &__body {
-    background: transparent linear-gradient(90deg, #F2F2F2 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+    display: flex;
     width: calc(100% - 200px);
     height: calc(100vh - 100px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
     margin: 0 auto;
-
   }
 
-  &__image {
-    margin-top: 225px;
-  }
-  
-  &__text {
-    position: relative;
-    top: -160px;
-    font: normal normal bold 79px/95px Poppins;
-  }
-  
-  &__subText {
-    color: $color-light-blue;
-    margin-top: 20px;
-    font: normal normal  20px/30px Poppins;
-    text-align: left;
+  &__description {
+    height: 615px;
+    width: 929px;
+    background: transparent linear-gradient(90deg, #F2F2F2 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+    padding: 70px;
   }
 
-  &__icons {
+  &__subtitle {
+    font: normal normal bold 32px/48px Poppins;
+    color: #FF3B30;
+    padding: 20px 0;
+  }
+
+  &__title {
+    font: normal normal bold 100px/110px Poppins;
+    padding: 20px 0;
+  }
+
+  &__descriptionText {
+    font: normal normal normal 25px/35px Poppins;
+    color: #999999;   
+  }
+
+  &__shipping {
+    font: normal normal normal 14px/35px Poppins;
+    color: #FF3B30; 
+  }
+
+  &__descriptionFooter {
     display: flex;
     justify-content: space-between;
-    width: 150px;
-    margin-top: 152px;
+    align-items: flex-end;
+    margin-top: 40px;
+  }
+
+  &__priceContainer {
+    padding-left: 70px;
+  }
+
+  &__price {
+    font: normal normal bold 50px/76px Poppins;
+    color: $color-grey;
+  }
+
+  &__buy {
+    font: normal normal 600 20px/30px Poppins;
+    color: $color-red;
+  }
+
+  &__colorSelector {
+    display: flex;
+    justify-content: space-between;
+    width: 255px;
   }
 }

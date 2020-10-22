@@ -1,0 +1,135 @@
+@import '../../variables.scss';
+
+.watch {
+  background-color: $color-white;
+  height: 100vh;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: $color-white;
+  }
+
+  &__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-black;
+    height: 100%;
+    width: 100px;
+  }
+  
+  &__menuItems {
+    display: flex;
+    margin-right: 100px;
+  }
+
+  &__menuLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
+    font: normal normal normal 20px/30px Poppins;
+    width: 367px;
+    
+      a {
+        text-decoration: none;
+        color: $color-grey;
+      }
+  }
+
+  &__menuButton {
+    width: 156px;
+    height: 46px;
+    background: $color-light-blue 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    border-color: $color-white;
+    font: normal normal normal 20px/30px Poppins;
+    color: $color-white;
+  }
+
+  &__body {
+    display: flex;
+    width: calc(100% - 200px);
+    height: calc(100vh - 100px);
+    margin: 0 auto;
+  }
+
+  &__description {
+    height: 615px;
+    width: 929px;
+    background: transparent linear-gradient(90deg, #F2F2F2 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+    padding: 70px;
+  }
+
+  &__subtitle {
+    font: normal normal bold 32px/48px Poppins;
+    color: #FF3B30;
+    padding: 20px 0;
+  }
+
+  &__title {
+    font: normal normal bold 100px/110px Poppins;
+    padding: 20px 0;
+  }
+
+  &__descriptionText {
+    font: normal normal normal 25px/35px Poppins;
+    color: #999999;   
+  }
+
+  &__shipping {
+    font: normal normal normal 14px/35px Poppins;
+    color: #FF3B30; 
+  }
+
+  &__descriptionFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 40px;
+  }
+
+  &__priceContainer {
+    padding-left: 70px;
+  }
+
+  &__price {
+    font: normal normal bold 50px/76px Poppins;
+    color: $color-grey;
+  }
+
+  &__buy {
+    font: normal normal 600 20px/30px Poppins;
+    color: $color-red;
+  }
+
+  &__colorSelector {
+    display: flex;
+    justify-content: space-between;
+    width: 190px;
+    margin: 0 auto;
+  }
+
+  &__selectedWatch {
+    margin-top: 70px;
+    margin-left: 40px;
+  }
+
+  &__icons {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+  }
+
+  &__iconsContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}

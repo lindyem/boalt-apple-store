@@ -6,6 +6,7 @@ import SignUp from "./components/SignUp";
 import ComingProducts from "./components/ComingProducts";
 import Welcome from "./components/Welcome";
 import Iphone from "./components/Iphone";
+import Watch from "./components/Watch";
 import { AnimatePresence  } from "framer-motion"
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
           watch: "2020/11/16",
         })
       })
-  });
+  }, []);
 
   return (
     <div>
@@ -37,6 +38,7 @@ function App() {
           <Route path="/comingProducts" component={ComingProducts} />
           <Route path="/welcome" component={Welcome} />
           <Route path="/iphone" component={Iphone} />
+          <Route path="/watch" component={Watch} />
         </Switch>
       </AnimatePresence>
     </div>

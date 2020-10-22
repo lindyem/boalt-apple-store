@@ -20,28 +20,27 @@ const Iphone = (props) => {
 
   return (
     <motion.div className="iphone"
-      key="iphone page"
+      key="iphone"
       initial={{ y: '100vh' }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}>
-    <div
-      className="iphone__header"
-    >
-    
-      <div className="iphone__logo" onClick={() => history.push('/comingProducts')}>
-        <img src={appleLogoSmall} />
-      </div>
-      <div className="iphone__menuItems">
-        <div className="iphone__menuLinks">
-          <Link to={`/iphone`}>iPhone</Link>
-          <Link to={`/mbp`}>MacBook Pro</Link>
-          <Link to={`/watch`}>Watch</Link>
+      <div
+        className="iphone__header"
+      >
+        <div className="iphone__logo" onClick={() => history.push('/comingProducts')}>
+          <img src={appleLogoSmall} />
         </div>
-        <div >
-          <button className="iphone__menuButton">Notify Me</button>
+        <div className="iphone__menuItems">
+          <div className="iphone__menuLinks">
+            <Link to={`/iphone`}>iPhone</Link>
+            <Link to={`/mbp`}>MacBook Pro</Link>
+            <Link to={`/watch`}>Watch</Link>
+          </div>
+          <div >
+            <button className="iphone__menuButton">Notify Me</button>
+          </div>
         </div>
       </div>
-    </div>
     <div className="iphone__body">
       <div>
         <div className="iphone__description">
@@ -80,22 +79,22 @@ const Iphone = (props) => {
           >
             <img
               src={iphone}
-              width="20"
+              width="15"
               height="29"
               onClick={() => history.push('/iphone')}
             />
             <img
               src={computer}
-              width="30"
-              height="29"
+              width="39"
+              height="23"
               onClick={() => history.push('/mbp')}
             
             />
             <img
               src={watch}
-              width="20"
-              height="29"
-              onClick={() => history.push('/mbp')}
+              width="19"
+              height="31"
+              onClick={() => history.push('/watch')}
             />
           </div>
         </div>

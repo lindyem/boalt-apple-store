@@ -71,24 +71,24 @@ const Welcome = (props) => {
           transition={{ duration: 1 }}
         >
           <img
-            src={iphone}
-            width="20"
-            height="29"
-            onClick={() => history.push('/iphone')}
-          />
-           <img
-            src={computer}
-            width="30"
-            height="29"
-            onClick={() => history.push('/mbp')}
-           
-          />
-           <img
-            src={watch}
-            width="20"
-            height="29"
-            onClick={() => history.push('/mbp')}
-          />
+              src={iphone}
+              width="15"
+              height="29"
+              onClick={() => history.push('/iphone')}
+            />
+            <img
+              src={computer}
+              width="39"
+              height="23"
+              onClick={() => history.push('/mbp')}
+            
+            />
+            <img
+              src={watch}
+              width="19"
+              height="31"
+              onClick={() => history.push('/watch')}
+            />
         </motion.div>
       </motion.div>
     </motion.div>  )

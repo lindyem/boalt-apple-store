@@ -47,7 +47,7 @@ const Watch = (props) => {
           <div className="watch__subtitle">Apple Watch</div>
           <div className="watch__title">Change starts within.</div>
           <div className="watch__descriptionText">Apple Watch Series 4. Fundamentally redesigned and re‑engineered to help you be even more active, healthy, and connected. </div>
-          <div className="watch__shipping">Starts Shipping</div>
+              <div className="watch__shipping">Starts Shipping {props.shippingDate}</div>
         </div> 
         <div className="watch__descriptionFooter">
           <div className="watch__priceContainer">

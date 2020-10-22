@@ -20,7 +20,7 @@ function App() {
       })
       .catch((err) => {
         console.log(err);
-        // If CORS error manually set API data\
+        // If CORS error manually set API data
         setShippingDates({
           iphone: "2020/02/21",
           macbook: "2020/08/04",
@@ -37,8 +37,8 @@ function App() {
           <Route path="/signUp" component={SignUp} />
           <Route path="/comingProducts" component={ComingProducts} />
           <Route path="/welcome" component={Welcome} />
-          <Route path="/iphone" component={Iphone} />
-          <Route path="/watch" component={Watch} />
+          <Route path="/iphone" render={() => <Iphone shippingDate={shippingDates.iphone} />} />
+          <Route path="/watch" render={() => <Watch shippingDate={shippingDates.watch} />} />
         </Switch>
       </AnimatePresence>
     </div>

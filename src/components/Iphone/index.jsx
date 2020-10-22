@@ -47,7 +47,7 @@ const Iphone = (props) => {
           <div className="iphone__subtitle">Iphone</div>
           <div className="iphone__title">The ultimate iPhone</div>
           <div className="iphone__descriptionText">The future is here. Join the iPhone Upgrade Program to get the latest iPhone - NOW!</div>
-          <div className="iphone__shipping">Iphone</div>
+          <div className="iphone__shipping">Starts Shipping {props.shippingDate}</div>
         </div> 
         <div className="iphone__descriptionFooter">
           <div className="iphone__priceContainer">

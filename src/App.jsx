@@ -13,9 +13,18 @@ function App() {
   const [shippingDates, setShippingDates] = useState({});
 
   useEffect(() => {
-    axios.get("http://boalt-interview.herokuapp.com/api/shipping-dates")
+    axios.get("https://boalt-interview.herokuapp.com/api/shipping-dates")
       .then((response) => {
-        console.log(response)
+        console.log(response);
+      })
+      .catch((err) => {
+        console.log(err);
+        // If CORS error manually set API data\
+        setShippingDates({
+          iphone: "2020/02/21",
+          macbook: "2020/08/04",
+          watch: "2020/11/16",
+        })
       })
   });
 

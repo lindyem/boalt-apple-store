@@ -6,9 +6,9 @@
 
   &__body {
     display: flex;
-    width: calc(100% - 200px);
+    width: calc(100% - 100px);
     height: calc(100vh - 100px);
-    margin: 0 auto;
+    margin-left: auto;
   }
 
   &__descriptionContainer {

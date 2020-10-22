@@ -9,6 +9,7 @@ import ComingProducts from "./components/ComingProducts";
 import Welcome from "./components/Welcome";
 import Iphone from "./components/Iphone";
 import Watch from "./components/Watch";
+import Macbook from "./components/Macbook";
 
 function App() {
   const [isAuth, setAuth] = useState(true);
@@ -53,6 +54,7 @@ function App() {
           <Route path="/welcome" component={Welcome} />
           <Route path="/iphone" render={() => <Iphone shippingDate={shippingDates.iphone} />} />
           <Route path="/watch" render={() => <Watch shippingDate={shippingDates.watch} />} />
+          <Route path="/mbp" render={() => <Macbook shippingDate={shippingDates.macbook} />} />
           <Route path="*" render={() => <Redirect to={'/welcome'} />} />
         </Switch>
       </AnimatePresence>

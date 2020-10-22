@@ -10,9 +10,9 @@ import largeBlackIphone from '../../assets/images/iphone-large-black.png';
 import largeRoseIphone from '../../assets/images/iphone-large-rose-back.png';
 import fadedBlackIphone from '../../assets/images/iphone-small-black-fade.png';
 import fadedRoseIphone from '../../assets/images/iphone-small-rose-fade.png';
-import iphone from '../../assets/images/IphoneIcon.png';
-import computer from '../../assets/images/computer.png';
-import watch from '../../assets/images/watch.png';
+import iphone from '../../assets/images/iphone-active-white.png';
+import computer from '../../assets/images/mac-inactive-white.png';
+import watch from '../../assets/images/watch-inactive-white.png';
 
 
 const Iphone = (props) => {

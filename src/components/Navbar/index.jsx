@@ -9,7 +9,7 @@ const Navbar = (props) => {
     <div
       className="navbar"
     >
-      <div className="navbar__logo" onClick={() => history.push('/comingProducts')}>
+      <div className="navbar__logo" onClick={() => history.push('/')}>
         <img src={appleLogoSmall} />
       </div>
       <div className="navbar__menuItems">

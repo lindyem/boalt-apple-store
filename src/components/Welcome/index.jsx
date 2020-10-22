@@ -4,9 +4,9 @@ import { Link, useHistory } from "react-router-dom";
 import Navbar from '../Navbar';
 import appleLogoSmall from '../../assets/images/apple-32.png';
 import appleLogoBig from '../../assets/images/apple-grey.png';
-import iphone from '../../assets/images/IphoneIcon.png';
-import computer from '../../assets/images/computer.png';
-import watch from '../../assets/images/watch.png';
+import iphone from '../../assets/images/iphone-inactive-white.png';
+import computer from '../../assets/images/mac-inactive-white.png';
+import watch from '../../assets/images/watch-inactive-white.png';
 
 const Welcome = (props) => {
   const history = useHistory();

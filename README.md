@@ -1,12 +1,13 @@
 # Apple Store Clone
 
-Apple Store clone 
+Apple Store Clone 
 
 
 ## Description 
 Project consists of an Apple store clone with 3 product pages, a welcome and coming products page. App is made in ReactJs with CSS animations. 
 
-[![Watch the video](https://img.youtube.com/vi/zuqqBX7gRJQ/maxresdefault.jpg)](https://youtu.be/zuqqBX7gRJQ
+
+[![Watch the video](https://img.youtube.com/vi/zuqqBX7gRJQ/maxresdefault.jpg)](https://youtu.be/zuqqBX7gRJQ)
 
 ## Table of Contents 
 [Installation](#installation)

@@ -4,52 +4,6 @@
   background-color: $color-white;
   height: 100vh;
 
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    background-color: $color-white;
-  }
-
-  &__logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $color-black;
-    height: 100%;
-    width: 100px;
-  }
-  
-  &__menuItems {
-    display: flex;
-    margin-right: 100px;
-  }
-
-  &__menuLinks {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 40px;
-    font: normal normal normal 20px/30px Poppins;
-    width: 367px;
-    
-      a {
-        text-decoration: none;
-        color: $color-grey;
-      }
-  }
-
-  &__menuButton {
-    width: 156px;
-    height: 46px;
-    background: $color-light-blue 0% 0% no-repeat padding-box;
-    border-radius: 23px;
-    border-color: $color-white;
-    font: normal normal normal 20px/30px Poppins;
-    color: $color-white;
-  }
-
   &__body {
     display: flex;
     width: calc(100% - 200px);

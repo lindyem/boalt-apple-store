@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from "framer-motion"
 import { Link, useHistory } from "react-router-dom";
+import Navbar from '../Navbar';
 import appleLogoSmall from '../../assets/images/apple-32.png';
 import appleLogoBig from '../../assets/images/apple-grey.png';
 import iphone from '../../assets/images/IphoneIcon.png';
@@ -11,34 +12,16 @@ const Welcome = (props) => {
   const history = useHistory();
 
   return (
-    <motion.div className="welcome">
-      <motion.div
-        className="welcome__header"
-        key="welcomeHeader"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
-      
-        <div className="welcome__logo" onClick={() => history.push('/comingProducts')}>
-          <img src={appleLogoSmall} />
-        </div>
-        <div className="welcome__menuItems">
-          <div className="welcome__menuLinks">
-            <Link to={`/iphone`}>iPhone</Link>
-            <Link to={`/mbp`}>MacBook Pro</Link>
-            <Link to={`/watch`}>Watch</Link>
-          </div>
-          <div >
-            <button className="welcome__menuButton">Notify Me</button>
-          </div>
-        </div>
-      </motion.div>
-      <motion.div className="welcome__body"
-        key="welcomeBody"
-        initial={{ opacity: 0.5 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
+    <motion.div
+      className="welcome"
+      key="welcomeBody"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <Navbar />
+      <div className="welcome__body"
+        
       >
         <motion.img 
           src={appleLogoBig}
@@ -90,7 +73,7 @@ const Welcome = (props) => {
               onClick={() => history.push('/watch')}
             />
         </motion.div>
-      </motion.div>
+      </div>
     </motion.div>  )
 }
 

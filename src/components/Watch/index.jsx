@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from "framer-motion"
 import { Link, useHistory } from "react-router-dom";
+import Navbar from '../Navbar'; 
 import appleLogoSmall from '../../assets/images/apple-32.png';
 import appleLogoBig from '../../assets/images/apple-512.png';
 import blackWatch from '../../assets/images/watch-black1.png';
@@ -19,23 +20,7 @@ const Watch = (props) => {
 
   return (
    <div>
-    <div
-        className="iphone__header"
-      >
-        <div className="iphone__logo" onClick={() => history.push('/comingProducts')}>
-          <img src={appleLogoSmall} />
-        </div>
-        <div className="iphone__menuItems">
-          <div className="iphone__menuLinks">
-            <Link to={`/iphone`}>iPhone</Link>
-            <Link to={`/mbp`}>MacBook Pro</Link>
-            <Link to={`/watch`}>Watch</Link>
-          </div>
-          <div >
-            <button className="iphone__menuButton">Notify Me</button>
-          </div>
-        </div>
-      </div>                                                                      
+    <Navbar />                                                                  
     <motion.div className="watch"
       key="watch"
       initial={{ x: '-20vw', opacity: 0 }}
@@ -52,7 +37,7 @@ const Watch = (props) => {
         <div className="watch__descriptionFooter">
           <div className="watch__priceContainer">
             <div className="watch__price">From $699</div>
-            <div className="watch__buy">Buy Now > </div>
+            <div className="watch__buy">Buy Now {">"} </div>
           </div>
           </div>
       </div>

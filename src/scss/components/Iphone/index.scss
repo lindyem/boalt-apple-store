@@ -111,4 +111,24 @@
     justify-content: space-between;
     width: 255px;
   }
+
+  &__selectedIphone {
+    margin-top: 70px;
+    margin-left: 40px;
+  }
+
+  &__icons {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+  }
+
+  &__iconsContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 }

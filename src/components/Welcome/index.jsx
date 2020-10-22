@@ -86,10 +86,9 @@ const Welcome = (props) => {
            <img
             src={watch}
             width="20"
-
-                        height="29"
-watch          />
-watch          />
+            height="29"
+            onClick={() => history.push('/mbp')}
+          />
         </motion.div>
       </motion.div>
     </motion.div>  )

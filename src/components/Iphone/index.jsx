@@ -9,6 +9,9 @@ import largeBlackIphone from '../../assets/images/iphone-large-black.png';
 import largeRoseIphone from '../../assets/images/iphone-large-rose-back.png';
 import fadedBlackIphone from '../../assets/images/iphone-small-black-fade.png';
 import fadedRoseIphone from '../../assets/images/iphone-small-rose-fade.png';
+import iphone from '../../assets/images/IphoneIcon.png';
+import computer from '../../assets/images/computer.png';
+import watch from '../../assets/images/watch.png';
 
 
 const Iphone = (props) => {
@@ -16,13 +19,13 @@ const Iphone = (props) => {
   const [selectedIphone, setSelectedIphone] = useState('black');
 
   return (
-    <div className="iphone">
-    <motion.div
+    <motion.div className="iphone"
+      key="iphone page"
+      initial={{ y: '100vh' }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}>
+    <div
       className="iphone__header"
-      key="iphoneHeader"
-      // initial={{ y: '100vh' }}
-      // animate={{ y: 0 }}
-      // transition={{ duration: 1 }}
     >
     
       <div className="iphone__logo" onClick={() => history.push('/comingProducts')}>
@@ -38,7 +41,7 @@ const Iphone = (props) => {
           <button className="iphone__menuButton">Notify Me</button>
         </div>
       </div>
-    </motion.div>
+    </div>
     <div className="iphone__body">
       <div>
         <div className="iphone__description">
@@ -64,16 +67,40 @@ const Iphone = (props) => {
                   <img src={smallRoseIphone} />
               </div>)
             }
-        </div>
+          </div>
       </div>
       <div className="iphone__selectedIphone">
         { selectedIphone === 'black' ? 
           <motion.img key="blackIphone" initial={{ x: '40vw' }} animate={{ x: 0 }} transition={{ duration: '0.2' }} src={largeBlackIphone} /> : <motion.img key="roseIphone"  initial={{ x: '40vw' }} animate={{ x: 0 }} transition={{ duration: '0.2' }} src={largeRoseIphone} />
         }
       </div>
-      <div></div>
-    </div>
-  </div>
+      <div className="iphone__iconsContainer"> 
+        <div
+            className="iphone__icons"
+          >
+            <img
+              src={iphone}
+              width="20"
+              height="29"
+              onClick={() => history.push('/iphone')}
+            />
+            <img
+              src={computer}
+              width="30"
+              height="29"
+              onClick={() => history.push('/mbp')}
+            
+            />
+            <img
+              src={watch}
+              width="20"
+              height="29"
+              onClick={() => history.push('/mbp')}
+            />
+          </div>
+        </div>
+      </div>   
+    </motion.div>
   )
 }
 

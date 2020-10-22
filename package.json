@@ -12,6 +12,7 @@
     "framer-motion": "^2.9.3",
     "node-sass": "^4.14.1",
     "react": "^16.14.0",
+    "react-cookie": "^4.0.3",
     "react-dom": "^16.14.0",
     "react-reel": "^1.2.3",
     "react-router-dom": "^5.2.0",

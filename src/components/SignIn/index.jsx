@@ -1,9 +1,23 @@
 import React from "react";
 import { motion } from "framer-motion"
 import { Link, useHistory } from "react-router-dom";
+import { useCookies } from 'react-cookie';
 
 const SignIn = (props) => {
   const history = useHistory();
+  const [cookies, setCookie] = useCookies(['user'])
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    const email = e.target[0].value;
+    const password = e.target[1].value;
+
+    if(localStorage.getItem(email) === password) {
+      setCookie('user', true, { path: '/' });
+      history.push('/');
+    }
+  }
+
   return (
     <motion.div
       key="signIn"
@@ -15,7 +29,7 @@ const SignIn = (props) => {
       <div className="signIn">
         <div className="signIn__container">
           <h1 className="signIn__header">Sign-In</h1>
-          <form>
+          <form onSubmit={handleFormSubmit}>
             <div className="signIn__formGroup">
               <label className="signIn__label" for="email">Email</label>
               <input
@@ -35,10 +49,10 @@ const SignIn = (props) => {
                 placeholder="**********"
               />
             </div>
-          </form>
-          <div className="signIn__buttonContainer">
-              <button className="signIn__button" type="button" onClick={() => history.push('/comingProducts')}>Sign-In</button>  
+              <div className="signIn__buttonContainer">
+              <button className="signIn__button" type="submit">Sign-In</button>  
             </div>
+          </form>
         </div>
         <div className="signIn__signUp">
             Not Registered?   <Link to={`/signUp`}>Sign-Up</Link>

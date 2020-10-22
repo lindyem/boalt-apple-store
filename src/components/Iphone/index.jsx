@@ -28,7 +28,7 @@ const Iphone = (props) => {
     <Navbar />
        
     <div className="iphone__body">
-      <div>
+      <div className="iphone__descriptionContainer">
         <div className="iphone__description">
           <div className="iphone__subtitle">Iphone</div>
           <div className="iphone__title">The ultimate iPhone</div>

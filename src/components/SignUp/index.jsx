@@ -1,8 +1,18 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const SignUp = (props) => {
+  const history = useHistory();
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    const name = e.target[0].value;
+    const email = e.target[1].value;
+    const password = e.target[2].value;
+    localStorage.setItem(email, password);
+    history.push('/signIn');
+  } 
+
   return (
     <motion.div
       key="signUp"
@@ -13,9 +23,9 @@ const SignUp = (props) => {
     <div className="signUp">
       <div className="signUp__container">
         <h1 className="signUp__header">Sign-Up</h1>
-        <form>
+        <form onSubmit={handleFormSubmit}>
           <div className="signUp__formGroup">
-            <label className="signUp__label" for="email">Full Name</label>
+            <label className="signUp__label" htmlFor="name">Full Name</label>
             <input
               className="signUp__input"
               type="text"
@@ -25,7 +35,7 @@ const SignUp = (props) => {
             />
           </div>
           <div className="signUp__formGroup">
-            <label className="signUp__label" for="email">Email</label>
+            <label className="signUp__label" htmlFor="email">Email</label>
             <input
               className="signUp__input"
               type="text"
@@ -35,7 +45,7 @@ const SignUp = (props) => {
             />
           </div>
           <div className="signUp__formGroup">
-            <label className="signUp__label" for="password">Password</label>
+            <label className="signUp__label" htmlFor="password">Password</label>
             <input className="signUp__input"
               type="password"
               name="password"
@@ -43,10 +53,10 @@ const SignUp = (props) => {
               placeholder="**********"
             />
           </div>
+          <div className="signUp__buttonContainer">
+            <button className="signUp__button" type="submit">Sign-Up</button>  
+          </div>
         </form>
-        <div className="signUp__buttonContainer">
-          <button className="signUp__button" type="button">Sign-Up</button>  
-        </div>
       </div>
       <div className="signUp__signIn">
           Already Registered? <Link to={`/`}>Sign-In</Link>

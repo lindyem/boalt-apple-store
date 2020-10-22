@@ -11,6 +11,10 @@
     margin: 0 auto;
   }
 
+  &__descriptionContainer {
+    flex: 1
+  }
+
   &__description {
     height: 615px;
     width: 929px;
@@ -81,7 +85,6 @@
 
   &__iconsContainer {
     display: flex;
-    width: 100%;
     justify-content: center;
     align-items: center;
   }

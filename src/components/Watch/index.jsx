@@ -27,7 +27,7 @@ const Watch = (props) => {
       animate={{ x: 0,  opacity: 1 }}
       transition={{ duration: 0.5 }}>
     <div className="watch__body">
-      <div>
+      <div className="watch__descriptionContainer">
         <div className="watch__description">
           <div className="watch__subtitle">Apple Watch</div>
           <div className="watch__title">Change starts within.</div>
